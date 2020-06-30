@@ -25,33 +25,54 @@ function getCities(event) {
 
   const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/distritos`;
 
+  citySelect.innerHTML = "<option value>Selecione a cidade</option>";
+  citySelect.disabled = true;
+
   fetch(url)
     .then((res) => {
       return res.json();
     })
     .then((cities) => {
       for (city of cities) {
-        citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+        citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
       }
 
       citySelect.disabled = false;
     });
 }
 
-function setCityInputValue(event) {
-  const cityInput = document.querySelector("input[name=city]");
 
-  const cityValue = event.target.value;
+document.querySelector("select[name=uf]").addEventListener("change", getCities);
 
-  const indexOfSelectedCity = event.target.selectedIndex;
+// itens de coleta
+// pegar os li
+const itemsToCollect = document.querySelectorAll(".items-grid li");
 
-  cityInput.value = event.target.options[indexOfSelectedCity].text;
+for (const item of itemsToCollect) {
+  item.addEventListener("click", handleSelectedItem)
 }
 
-document
-  .querySelector("select[name=uf]")
-  .addEventListener("change", getCities);
+let selectedItems = []
 
-document
-  .querySelector("select[name=city]")
-  .addEventListener("change", setCityInputValue);
+function handleSelectedItem(event) {
+  const itemLi = event.target
+  
+  //adcionar ou remover uma classe
+  itemLi.classList.toggle("selected")  
+  
+  const itemId = itemLi.dataset.id
+  
+  //verificar se existem itens selecionados
+  //pegar  os itens selecionados
+  const alreadySelected = selectedItems.findIndex(item => {
+    return item == itemId
+  })
+
+  // se ja estiver selecionado, retirar da seleção
+  if (alreadySelected >= 0) {
+    
+  }
+  // se não estiver selecionado add a seleção
+
+  // atualizar o campo escondido com os dados selecionados
+}
