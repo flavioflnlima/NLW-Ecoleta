@@ -19,27 +19,26 @@
   #page-home main {
     align-items: center;
   }
-  #page-create-point .items-grid{
+
+  #page-create-point .items-grid {
     grid-template-columns: 1fr 1fr;
   }
-  /*TODO: verificar estilo de recursividade*/
-  #page-create-point form .field-group{
-    display: block;
+  #page-create-point .field-group {
+    flex-direction: column;
   }
-  #page-create-point form .field-group .field + .field {
-    margin-left: auto;
+  #page-create-point .field-group .field + .field {
+    margin-left: 0;
   }
 
-  #page-search-results .cards{
+  #page-search-results .cards {
     grid-template-columns: 1fr;
   }
-  #page-search-results .cards{
+  #page-search-results .cards {
     text-align: center;
   }
-  #page-search-results .cards img{
+  #page-search-results .cards img {
     height: 250px;
   }
-
 }
 @media (min-width: 1700px) {
   #page-home {
