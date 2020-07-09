@@ -4,17 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flavioflnlima/Learning-JavaScript.git"
+    "url": "git+https://github.com/flavioflnlima/Next-Level-Week-JS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/flavioflnlima/Learning-JavaScript/issues"
+    "url": "https://github.com/flavioflnlima/Next-Level-Week-JS/issues"
   },
-  "homepage": "https://github.com/flavioflnlima/Learning-JavaScript#readme"
+  "homepage": "https://github.com/flavioflnlima/Next-Level-Week-JS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
