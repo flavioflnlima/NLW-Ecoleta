@@ -41,11 +41,8 @@ function getCities(event) {
     });
 }
 
-
 document.querySelector("select[name=uf]").addEventListener("change", getCities);
 
-// itens de coleta
-// pegar os li
 const itemsToCollect = document.querySelectorAll(".items-grid li");
 
 for (const item of itemsToCollect) {
@@ -63,8 +60,6 @@ function handleSelectedItem(event) {
   
   const itemId = itemLi.dataset.id
   
-  //verificar se existem itens selecionados
-  //pegar  os itens selecionados
   const alreadySelected = selectedItems.findIndex(item => {
     return item == itemId
   })
@@ -75,11 +70,10 @@ function handleSelectedItem(event) {
       return (itemsIsDifferent = item != itemId);
     });
     selectedItems = filteredItems;
-  } // se não estiver selecionado add a seleção
+  } 
   else {
     selectedItems.push(itemId)
   }
   
-  // atualizar o campo escondido com os dados selecionados
   collectedItems.value = selectedItems
 }
