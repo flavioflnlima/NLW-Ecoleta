@@ -55,16 +55,19 @@ let selectedItems = []
 function handleSelectedItem(event) {
   const itemLi = event.target
   
-  //adcionar ou remover uma classe
+  //toggle: add ou remove uma classe
   itemLi.classList.toggle("selected")  
   
   const itemId = itemLi.dataset.id
   
+  //verificar se existem itens selecionados, se sim
+  //pegar os itens selecionados
   const alreadySelected = selectedItems.findIndex(item => {
     return item == itemId
   })
 
   // se ja estiver selecionado, retirar da seleção
+  // se não, retirar da seleção
   if (alreadySelected >= 0) {
     const filteredItems = selectedItems.filter((item) => {
       return (itemsIsDifferent = item != itemId);

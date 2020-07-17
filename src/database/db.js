@@ -64,12 +64,12 @@ module.exports = db;
 //     // })
 
 //     // //delete
-//     // db.run(` DELETE FROM places WHERE id = ? `, [1], function (err) {
-//     //     if (err) {
-//     //         return console.log(err)
-//     //     }
-//     //     console.log("deletado com sucesso")
-//     // })
+    // db.run(` DELETE FROM places WHERE id = ? `, [2], function (err) {
+    //     if (err) {
+    //         return console.log(err)
+    //     }
+    //     console.log("deletado com sucesso")
+    // })
 
 
 // });
