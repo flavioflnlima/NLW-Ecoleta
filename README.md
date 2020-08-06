@@ -8,8 +8,11 @@
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
+  
 <p align="center">
+<a href="https://www.linkedin.com/in/flavio-fln-lima/">
+   <img alt="Made by Flavio Lima" src="https://img.shields.io/badge/made%20by-Flavio Lima-%2304D361">
+</a>
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
 
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=7159c1&labelColor=000000">
