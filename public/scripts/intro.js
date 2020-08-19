@@ -1,9 +1,9 @@
 // comments
-// document.write("Hello")
+ document.write("Hello")
 
 // variaveis, tipos de dados
-// let myvar = "He"
-// const myconst = "He"
+let myvar = "He"
+const myconst = "He"
 
 // document.write(myconst + myvar)
 
@@ -13,45 +13,45 @@
 // `Isso é uma string também`
 
 // number
-// const n1 = 1
-// const n2 = 12
-// document.write(n1 + n2)
+const n1 = 1
+const n2 = 12
+document.write(n1 + n2)
 
 // boolean - true ou false
-// const bTrue = true
-// const bFalse = false
-// document.write(bFalse)
+const bTrue = true
+const bFalse = false
+document.write(bFalse)
 
 // objeto possuem propriedades e funcionalidade
-// const pessoa = {
-//   altura: "1,80m",
-//   idade: 24,
-//   solteiro: true,
-//   correr(){
-//     document.write("executar uma grande logica de correr")
-//   }
-// }
+const pessoa = {
+  altura: "1,80m",
+  idade: 24,
+  solteiro: true,
+  correr(){
+    document.write("executar uma grande logica de correr")
+  }
+}
 
-// pessoa.correr()
+pessoa.correr()
 
 // Array - Vetores
-// const colecaoDeBolinhas = ["blue", "green", 1, {name: "My Name"}]
+const colecaoDeBolinhas = ["blue", "green", 1, {name: "My Name"}]
 
-// document.write(colecaoDeBolinhas[3].name)
+document.write(colecaoDeBolinhas[3].name)
 
 
 // Funções - Funcionalides - Atalhos - Reuso de código
 
 // // registrar função
-// function sayMyName(name) {
+function sayMyName(name) {
   
-//   document.write(name)
-// }
+  document.write(name)
+}
 
 // // executar
-// sayMyName("Douglas")
-// sayMyName("Valeska")
-// sayMyName("Kyam")
+sayMyName("Douglas")
+sayMyName("Valeska")
+sayMyName("Kyam")
 
 // condicionais
 
