@@ -76,3 +76,32 @@ if( notaFinal < 5 ) {
 for (i = 0; i < 10; i++) {
   document.write(`<p>${i}</p>`)
 }
+
+var resultado = '';
+var i = 0;
+do {
+   i += 1;
+   resultado += i + ' ';
+} while (i < 5);
+document.getElementById('exemplo').innerHTML = resultado;
+
+var n = 0;
+var x = 0;
+
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+function showOffsetPos (sId) {
+  var nLeft = 0, nTop = 0;
+
+  for (var oItNode = document.getElementById(sId); // initialization
+       oItNode; // condition
+       nLeft += oItNode.offsetLeft, nTop += oItNode.offsetTop, oItNode = oItNode.offsetParent) // final-expression
+       /* empty statement */ ;
+  
+  console.log("Offset position of \"" + sId + "\" element:\n left: " + nLeft + "px;\n top: " + nTop + "px;");
+}
+
+showOffsetPos("content");
