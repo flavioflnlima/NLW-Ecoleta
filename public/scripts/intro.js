@@ -8,9 +8,9 @@ const myconst = "He"
 document.write(myconst + myvar)
 
 // string
-// "Isso é uma string"
-// 'Isso também é um string'
-// `Isso é uma string também`
+var str1 = "Isso é uma string"
+var str2 = 'Isso também é um string'
+var str3 = `Isso é uma string também`
 
 // number
 const n1 = 1
@@ -31,8 +31,17 @@ const pessoa = {
     document.write("executar uma grande logica de correr")
   }
 }
-
 pessoa.correr()
+
+const pessoa2 = {
+  altura: "1,75m",
+  idade: 24,
+  solteiro: false,
+  correr(){
+    document.write("executar uma grande logica de correr")
+  }
+}
+pessoa2.correr()
 
 // Array - Vetores
 const colecaoDeBolinhas = ["blue", "green", 1, {name: "My Name"}]
