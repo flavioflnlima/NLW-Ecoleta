@@ -5,7 +5,7 @@
 let myvar = "He"
 const myconst = "He"
 
-// document.write(myconst + myvar)
+document.write(myconst + myvar)
 
 // string
 // "Isso é uma string"
@@ -55,15 +55,15 @@ sayMyName("Kyam")
 
 // condicionais
 
-// const notaFinal = 7
+const notaFinal = 7
 
-// if( notaFinal < 5 ) {
-//   document.write("Reprovado")
-// } else {
-//   document.write("Aprovado")
-// }
+if( notaFinal < 5 ) {
+  document.write("Reprovado")
+} else {
+  document.write("Aprovado")
+}
 
 // loop repetições
-// for (i = 0; i < 10; i++) {
-//   document.write(`<p>${i}</p>`)
-// }
+for (i = 0; i < 10; i++) {
+  document.write(`<p>${i}</p>`)
+}
