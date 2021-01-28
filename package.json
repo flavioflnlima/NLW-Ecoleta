@@ -19,8 +19,9 @@
   "homepage": "https://github.com/flavioflnlima/Next-Level-Week-JS#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "nunjucks": "^3.2.1",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
